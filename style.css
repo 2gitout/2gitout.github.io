@@ -23,6 +23,9 @@ body{
 .containter{
     padding: 10px 10%;
 }
+cursor:hover{
+    cursor: pointer;
+}
 nav{
     display: flex;
     align-items: center;
@@ -87,8 +90,10 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 .about-col-1 img{
+    margin-top: 3%;
+    margin-left: 3%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -214,6 +219,14 @@ nav ul li a:hover::after{
 }
 .btn:hover{
     background: #b80000;
+}
+.centre-header{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+h1 span{
+    color: #b80000;
 }
 /*-------------for small screens-----------*/
 @media only screen and (max-width: 600px){
