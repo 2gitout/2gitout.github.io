@@ -23,7 +23,9 @@ body{
 .containter{
     padding: 10px 10%;
 }
-
+h1 span{
+    color: #b80000;
+}
 nav{
     display: flex;
     align-items: center;
@@ -47,7 +49,6 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
-
 nav ul li a::after{
     content: '';
     width: 0;
