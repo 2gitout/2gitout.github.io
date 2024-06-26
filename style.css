@@ -23,9 +23,6 @@ body{
 .containter{
     padding: 10px 10%;
 }
-h1 span{
-    color: #b80000;
-}
 nav{
     display: flex;
     align-items: center;
