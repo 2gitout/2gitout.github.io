@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="home">
+    <div class="containter">
+        <nav>
+            <h1 class="logo"><span>Charlie</span>.</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="home-text">
+            <img src="images/SlimeEnemy(Blue)Budget.png">
+            <p>Programmer and Game Creator</p>
+            <h1>Hey, I'm <span>Charlie</span><br> and i enjoy creating new things</h1>
+        </div>
+    </div>
+</div>
+<!------about------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/goku image.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi, my names Charlie! and i'm a passionate programmer who enjoys 
+                    spending time creating games and software.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Can use in descending order of most proficient and ratings with each:<br> C# - 80,<br>C++ - 70,<br>SQL - 55,<br>Python - 45,<br>GDscript - 45.<br> (Have used HTML, CSS and JavaScript)</li>
+                            <li><span>3D modeling/Design</span><br>I have desigined games and have designed the UI/UX for them and have made 3D models in Blender</li>
+                            <li><span>Game Development</span><br>Creating games in many engines and here is each one with a rating:<br> Monogame (Microsoft XNA) - 85,<br> Unity - 45,<br> Unreal Engine - 65,<br>Godot - 55</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Day Experience on 12th April 2023</span><br>Young Proffessionals Work Experience at Spectris</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Unknown</li>
+                            <li><span>2022 - 2024</span><br>Cardinal Newman College</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------projects------------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/neaimgprjck2png.png">
+                <div class="layer">
+                    <h3>Monogame Microsoft XNA Game</h3>
+                    <p>The game was created as my NEA Project during College but has A* pathfinding, unique leveling up system and is a 2D survival game with different states an leaderboards which use a SQL database to store each players attempt.</p>
+                    <a href="#">⧩</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/tilebricks9.png">
+                <div class="layer">
+                    <h3>GameJam</h3>
+                    <p>.</p>
+                    <a href="#">⧩</a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/tilebricks9.png">
+                <div class="layer">
+                    <h3>Project</h3>
+                    <p>.</p>
+                    <a href="#">⧩</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
