@@ -10,7 +10,6 @@ html{
 body{
     background: #080808;
     color: #fff;
-    cursor: url(images/mousepointer.png),url(images/handrelease.png), auto;
 }
 #home{
     width: 100%;
@@ -22,9 +21,6 @@ body{
 }
 .containter{
     padding: 10px 10%;
-}
-cursor:hover{
-    cursor: pointer;
 }
 nav{
     display: flex;
@@ -90,8 +86,7 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 .about-col-1 img{
-    margin-top: 3%;
-    margin-left: 3%;
+    margin: 3%;
     width: 100%;
     border-radius: 30px;
 }
