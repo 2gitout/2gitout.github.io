@@ -224,6 +224,9 @@ nav ul li a:hover::after{
 h1 span{
     color: #b80000;
 }
+.crop img {
+    border-radius: 5%;
+}
 /*-------------for small screens-----------*/
 @media only screen and (max-width: 600px){
     #home{
